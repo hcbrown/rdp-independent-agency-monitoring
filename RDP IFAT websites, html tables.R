@@ -8,6 +8,7 @@ library(data.table)
 setnames(personnelmerge, c("Term.Status", "Term.Expires", "Must.Vacate.Seat.By", "Nomination.Status", "Latest.Action", "Dated.Received.from.President", "Replaced..Replacing", "Additional.Notes"), c("Term Status", "Term Expires", "Must Vacate Seat By", "Nomination Status", "Latest Action", "Date Received from President", "Replaced/ Replacing", "Additional Notes")) 
 
 # Convert CSV data to HTMLizable data tables
+library(DT)
 datatable(personnelmerge)
 
 ## Export to HTML
